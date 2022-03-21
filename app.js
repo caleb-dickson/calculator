@@ -19,8 +19,8 @@ class CalculatorUI {
             "-": (firstOperand, secondOperand) => firstOperand - secondOperand,
             "=": (secondOperand) => secondOperand,
         };
-        this.display = (document.querySelector(".calculator-display"));
-        this.keyPad = document.querySelector(".calculator-keys");
+        this.display = (document.querySelector(".display"));
+        this.keyPad = document.querySelector(".key-pad");
         this.listenToKeypad();
     }
     listenToKeypad() {
