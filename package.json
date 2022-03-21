@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacDev-io/calculator.git"
+  },
+  "author": "Caleb Dickson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tacDev-io/calculator/issues"
+  },
+  "homepage": "https://github.com/tacDev-io/calculator#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
