@@ -26,10 +26,10 @@ class CalculatorUI {
     listenToKeypad() {
         this.keyPad.addEventListener("click", (e) => {
             const target = e.target;
-            // IF THE CLICK EVENT !ISN'T ON A BUTTON, JUST "RETURN"
-            // DON'T DO ANYTHING
             if (!target.matches("button")) {
                 return;
+                // ^^^ IF THE CLICK EVENT !ISN'T ON A BUTTON, JUST "RETURN"
+                // DON'T DO ANYTHING
             }
             if (target.classList.contains("operator")) {
                 this.handleOperator(target.value);
@@ -91,7 +91,10 @@ class CalculatorUI {
         calc.waitingForNextOperand = false;
     }
     updateDisplay() {
-        calcUi.display.value = calc.displayValue;
+        calcUi.display.value = null;
+        setTimeout(() => {
+            calcUi.display.value = calc.displayValue;
+        }, 50)
     }
 }
 const calc = new CalculatorVars("Ready", null, true, null, null);
